@@ -1,0 +1,36 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "dev": "nuxi dev .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "postinstall": "nuxt prepare .playground",
+    "storybook": "storybook dev -p 6006 --no-open",
+    "build-storybook": "storybook build",
+    "storybook-start": "npx http-server ./storybook-static",
+    "typecheck": "nuxt typecheck"
+  },
+  "devDependencies": {
+    "nuxt": "3.11.1",
+    "typescript": "5.4.3"
+  },
+  "dependencies": {
+    "@formkit/addons": "1.6.0",
+    "@formkit/icons": "1.6.0",
+    "@formkit/nuxt": "1.6.0",
+    "@nuxt/image": "1.4.0",
+    "@nuxtjs/tailwindcss": "6.11.4",
+    "prettier": "3.2.5",
+    "sass-loader": "14.1.1",
+    "sass": "1.72.0",
+    "unplugin-auto-import": "0.17.5",
+    "unplugin-icons": "0.18.5",
+    "unplugin-vue-components": "0.26.0",
+    "vite-tsconfig-paths": "4.3.2"
+  },
+  "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
+}
