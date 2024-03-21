@@ -5,13 +5,13 @@ const currentDir = dirname(fileURLToPath(import.meta.url))
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  formkit: {
-    autoImport: true,
-  },
+  modules: ['@nuxtjs/tailwindcss', '@formkit/nuxt', '@nuxt/image'],
+  css: [join(currentDir, './assets/css/tailwind.scss')],
   tailwindcss: {
     cssPath: join(currentDir, './assets/css/tailwind.scss'),
     viewer: false,
   },
-  css: [join(currentDir, './assets/css/tailwind.scss')],
-  modules: ['@formkit/nuxt', '@nuxt/image', '@nuxtjs/tailwindcss'],
+  formkit: {
+    autoImport: true,
+  },
 })
