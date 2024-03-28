@@ -4,18 +4,9 @@ import { FormKitKitchenSink } from '@formkit/vue'
 
 <template>
   <div>
-    <h1 class="text-red-500 bg-slate-400">Design System</h1>
-
-    <div>
-      <h2>Component:</h2>
-      <HelloWorld name="user" />
-    </div>
-
-    <div>
-      <h2>loading inputs:</h2>
-      <Suspense>
-        <FormKitKitchenSink :pro="false" />
-      </Suspense>
-    </div>
+    <h2>loading inputs:</h2>
+    <Suspense>
+      <FormKitKitchenSink :pro="false" />
+    </Suspense>
   </div>
 </template>

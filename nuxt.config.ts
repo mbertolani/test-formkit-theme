@@ -8,10 +8,10 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@formkit/nuxt'],
   css: [join(currentDir, './assets/css/tailwind.scss')],
   tailwindcss: {
-    cssPath: join(currentDir, './assets/css/tailwind.scss'),
     viewer: false,
   },
   formkit: {
+    configFile: join(currentDir, './formkit.config.ts'),
     autoImport: true,
   },
 })

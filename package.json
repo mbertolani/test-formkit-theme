@@ -19,9 +19,9 @@
     "typescript": "5.4.3"
   },
   "dependencies": {
-    "@formkit/addons": "1.6.0",
-    "@formkit/icons": "1.6.0",
-    "@formkit/nuxt": "1.6.0",
+    "@formkit/addons": "1.6.1",
+    "@formkit/icons": "1.6.1",
+    "@formkit/nuxt": "1.6.1",
     "@nuxtjs/tailwindcss": "6.11.4",
     "prettier": "3.2.5",
     "sass-loader": "14.1.1",
